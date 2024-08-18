@@ -1,6 +1,10 @@
 import express from "express";
 
-import { listFoods, postFood,  removeFoodItem } from "../controllers/food.controller.js";
+import {
+  listFoods,
+  postFood,
+  removeFoodItem,
+} from "../controllers/food.controller.js";
 
 import multer from "multer";
 
@@ -21,11 +25,10 @@ foodRouter.post("/post", upload.single("image"), postFood);
 
 // list all food
 
-foodRouter.get("/list",listFoods)
+foodRouter.get("/list", listFoods);
 
 // remove a food item
 
-foodRouter.delete("/:id",removeFoodItem)
-
+foodRouter.delete("/:id", removeFoodItem);
 
 export default foodRouter;
