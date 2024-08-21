@@ -5,7 +5,7 @@ import { addToCart, getCart, removeFromCart } from "../controllers/cart.controll
 const cartRouter = express.Router()
 
 cartRouter.post('/add',isAuthorized,addToCart)
-cartRouter.delete('/remove',isAuthorized,removeFromCart)
+cartRouter.post('/remove',isAuthorized,removeFromCart)
 cartRouter.get('/get',isAuthorized,getCart)
 
 export default cartRouter
