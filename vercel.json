@@ -15,5 +15,5 @@
       "dest": "backend/server.js"
     }
   ],
-  "installCommand": "npm install && npm build"
+  "installCommand": "npm install && npm start"
 }
