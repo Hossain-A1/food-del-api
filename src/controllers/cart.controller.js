@@ -1,4 +1,4 @@
-import userModel from "../models/user.model.js";
+import userModel from "../models/order.model.js";
 
 const addToCart = async (req, res) => {
   const { _id } = req.user;
